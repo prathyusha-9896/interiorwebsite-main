@@ -1,0 +1,397 @@
+#services {
+    padding: 0px 70px;
+
+    .Frame {
+        z-index: 1;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .imgBox .projectIMG {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .imgBox {
+        width: 100%;
+        height: 520px;
+        position: relative;
+        margin: auto;
+    }
+
+    .serviceAbout {
+        h2 {
+            font-weight: 700;
+            color: var(--text-color);
+            font-size: 22px;
+            margin-bottom: 0;
+        }
+
+        span {
+            background-color: var(--secondary-color);
+            height: 30px;
+            width: 38px;
+            border-radius: 50%;
+            display: inline-block;
+            padding: 3px;
+            text-align: center;
+            font-weight: 600;
+            color: var(--white-color);
+            margin-right: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        p {
+            font-weight: 500;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            line-height: 1.2;
+            margin-bottom: 20px;
+
+        }
+    }
+
+    .IncludeBoxes p {
+        margin-bottom: 0px !important;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .IncludeBoxes i {
+        color: var(--secondary-color);
+        margin-right: 5px;
+        font-size: 14px;
+    }
+
+    .IncludeBoxes {
+        margin: 0px 10px;
+    }
+
+    .IncludeIMG .imgBox {
+        width: 100%;
+        height: 350px;
+        position: relative;
+        margin: auto;
+    }
+
+    .Hospitality {
+        h2 {
+            color: var(--text-color);
+        }
+
+        p,
+        li {
+            color: var(--text-color);
+        }
+
+        .bg-white {
+            background-color: var(--white-color);
+        }
+
+        .text-yellow-500 {
+            color: var(--text-color);
+            background: var(--secondary-color);
+            border-radius: 50%;
+            font-size: 1rem;
+            font-weight: 700;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .shadow {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .list-disc {
+            list-style-type: disc;
+        }
+
+        .pl-5 {
+            padding-left: 1.25rem;
+        }
+
+        .mb-8 {
+            margin-bottom: 2rem;
+        }
+
+        .mb-4 {
+            margin-bottom: 1rem;
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+        }
+
+        .font-bold {
+            font-weight: 700;
+        }
+
+        .font-semibold {
+            font-weight: 800;
+        }
+
+        .borderbox {
+            border-left: 1px solid var(--text-color);
+        }
+
+        .borderbox:first-child {
+            border: none;
+        }
+
+        .borderbox p {
+            margin: 0;
+        }
+
+        ul li::before {
+            content: "";
+            box-shadow: 4px 4px 0px 3px var(--secondary-color);
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            display: block;
+            margin: 0px 0px -21px -22px;
+        }
+
+        ::marker {
+            font-size: 24px;
+        }
+    }
+
+    .Label {
+        background: var(--secondary-color);
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .Label marquee {
+        color: var(--text-color);
+        font-weight: 700;
+        font-size: 22px;
+    }
+
+    .Label marquee span {
+        font-size: 42px;
+        line-height: 0;
+        margin: 23px 10px 10px 10px;
+    }
+}
+
+.ProjectJourney {
+    height: 300px;
+    padding: 10px 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    h2 {
+        font-size: 55px;
+        color: var(--text-color);
+        font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 58px;
+        text-align: center;
+    }
+
+    h2 span {
+        font-family: "Tangerine", cursive;
+        color: var(--secondary-color);
+        font-weight: 700;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .ProjectJourney {
+        height: 120px;
+        padding: 10px 30px;
+    }
+
+    .ProjectJourney h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    #services {
+        padding: 0px 10px;
+    }
+
+    #services .imgBox {
+        height: 180px;
+    }
+
+    #services .serviceAbout span {
+        background-color: var(--secondary-color);
+        height: 30px;
+        width: 108px;
+    }
+
+    #services .IncludeIMG .imgBox {
+        width: 100%;
+        height: 100%;
+    }
+
+    #services .Hospitality .borderbox:first-child {
+        border-left: 1px solid;
+    }
+}
+
+@media (max-width: 375px) and (min-width: 321px) {
+    .ProjectJourney {
+        height: 140px;
+        padding: 10px 30px;
+    }
+
+    .ProjectJourney h2 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    #services {
+        padding: 0px 10px;
+    }
+
+    #services .serviceAbout span {
+        width: 88px;
+    }
+
+    #services .IncludeIMG .imgBox {
+        height: 200px;
+    }
+
+    #services .Hospitality .borderbox:first-child {
+        border-left: 1px solid;
+    }
+}
+
+@media (max-width: 425px) and (min-width: 376px) {
+    #services {
+        padding: 0px 15px;
+    }
+
+    #services .imgBox {
+        height: 240px;
+    }
+
+    #services .serviceAbout span {
+        width: 20% !important;
+    }
+
+    .IncludeBoxList {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #services .IncludeIMG .imgBox {
+        height: 260px;
+    }
+
+    #services .Hospitality .borderbox:first-child {
+        border-left: 1px solid;
+    }
+
+    .ProjectJourney {
+        height: 160px;
+        padding: 10px 20px;
+    }
+
+    .ProjectJourney h2 {
+        font-size: 35px;
+        line-height: 38px;
+    }
+}
+
+@media (max-width: 550px) and (min-width: 425px) {
+    #services .imgBox {
+        height: 330px;
+    }
+
+    #services .serviceAbout span {
+        width: 13% !important;
+    }
+
+    #services .IncludeBoxes {
+        width: 46%;
+    }
+
+    .IncludeBoxList {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .ProjectJourney {
+        padding: 10px 20px !important;
+    }
+
+    .ProjectJourney h2 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+    #services {
+        padding: 0px 20px;
+    }
+
+    #services .serviceAbout span {
+        width: 47px;
+    }
+
+    #services .IncludeIMG .imgBox {
+        height: 270px;
+    }
+
+    .ProjectJourney {
+        height: 300px;
+        padding: 10px 130px;
+    }
+}
+
+@media (min-width: 915px) and (max-width: 1199.98px) {
+    #services {
+        padding: 0px 0px;
+    }
+
+    #services .imgBox {
+        width: 100%;
+        height: 470px;
+    }
+
+    #services .serviceAbout span {
+        height: 30px;
+        width: 50px;
+    }
+
+    #services .IncludeIMG .imgBox {
+        width: 100%;
+        height: 260px;
+    }
+
+    .ProjectJourney {
+        height: 220px;
+        padding: 10px 190px;
+    }
+
+    .toggleMenu {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+@media (min-width: 1400px) {}

@@ -1,0 +1,221 @@
+footer {
+    background: var(--primary-color);
+    padding: 80px 100px 20px 100px;
+}
+
+footer p {
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+footer li {
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 14px;
+    padding: 8px 0px;
+}
+
+footer h6 {
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+footer input {
+    background: #ffffff42;
+    padding: 9px;
+    border-radius: 10px;
+    width: 95%;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+footer input::placeholder {
+    color: var(--text-color);
+}
+
+footer form i {
+    font-size: 43px;
+    margin: -9px 0px -12px -42px;
+    color: var(--secondary-color);
+}
+
+footer .socialMedia {
+    display: flex;
+}
+
+footer .socialMedia i {
+    font-size: 20px;
+    height: 35px;
+    width: 35px;
+    background: var(--secondary-color);
+    border-radius: 50%;
+    margin: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+}
+
+footer input[type="email"] {
+    width: 100%;
+    display: block; 
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    outline: none;
+}
+
+.downFooter {
+    margin-top: 50px;
+    border-top: 1px solid #fff;
+    padding: 29px 0px 9px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.downFooter h2 {
+    font-size: 16px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.downFooter h2 span {
+    color: var(--secondary-color);
+}
+
+
+
+@media (max-width: 375px) {
+    footer {
+        padding: 60px 20px 20px 20px;
+    }
+
+    footer h6 {
+        font-size: 16px;
+    }
+
+    footer li {
+        font-size: 12px;
+    }
+
+
+    .boxs {
+        flex-direction: column;
+    }
+
+    .boxs .w-2\/6,
+    .boxs .w-4\/6,
+    .boxs .w-2\/4 {
+        width: 100% !important;
+    }
+
+    .boxs .w-1\/4 {
+        width: 50% !important;
+    }
+
+    .lastBox {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 575.98px) {
+    footer {
+        padding: 60px 20px 20px 20px;
+    }
+
+    footer h6 {
+        font-size: 16px;
+    }
+
+    footer li {
+        font-size: 12px;
+    }
+
+    .boxs {
+        flex-direction: column;
+    }
+
+    .boxs .w-2\/6,
+    .boxs .w-4\/6,
+    .boxs .w-2\/4 {
+        width: 100% !important;
+    }
+
+    .boxs .w-1\/4 {
+        width: 50% !important;
+    }
+
+    .lastBox {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .downFooter {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    footer {
+        padding: 60px 20px 20px 20px;
+    }
+
+    footer h6 {
+        font-size: 16px;
+    }
+
+    footer li {
+        font-size: 12px;
+    }
+
+
+    .boxs {
+        flex-direction: column;
+    }
+
+    .boxs .w-2\/6,
+    .boxs .w-4\/6,
+    .boxs .w-2\/4 {
+        width: 100% !important;
+    }
+
+    .boxs .w-1\/4 {
+        width: 50% !important;
+    }
+
+    .lastBox {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .downFooter {
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    footer {
+        padding: 60px 20px 20px 20px;
+    }
+
+    footer h6 {
+        font-size: 16px;
+    }
+
+    footer li {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+@media (min-width: 1400px) {}

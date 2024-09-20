@@ -1,0 +1,1818 @@
+.main-Banner {
+    background: var(--primary-color);
+    position: relative;
+}
+.main-Banner .tag {
+    font-size: 28px;
+    color: var(--white-color);
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.custom-frame {
+    clip-path: polygon(100px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 120px); /* Create the cut */
+    border-radius: 20px; /* Rounded corners for the other three sides */
+    width: 100%; /* Make sure the image takes full width of its container */
+    height: 440px; /* Keep the aspect ratio */
+    object-fit: cover; /* Ensure the image is fully visible without distortion */
+  }
+  
+  
+.main-Banner h2 {
+    font-size: 97px;
+    color: var(--white-color);
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin-bottom: 21px;
+    text-transform: capitalize;
+}
+
+.main-Banner h2 span {
+    font-family: "Dancing Script", cursive;
+    font-size: 78px;
+    color: var(--secondary-color);
+    font-weight: 100;
+}
+
+.main-Banner p {
+    font-size: 14px;
+    color: #c3c3c3;
+    font-weight: 400;
+    padding: 30px 0;
+
+}
+
+.main-Banner button {
+    background: var(--secondary-color);
+    padding: 6px 6px 6px 48px;
+    width: 40%;
+    height: 50px;
+    border-radius: 30px;
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.main-Banner .contentBox {
+    padding: 43px 66px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-Banner button span {
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 600;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-Banner button i {
+    position: absolute;
+    font-size: 34px;
+    top: 50%;
+    bottom: 50%;
+    display: flex;
+    left: 7px;
+    color: var(--white-color);
+    align-items: center;
+}
+
+.main-Banner {
+    padding: 60px 50px;
+}
+
+.Hero {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contentHeader {
+    width: 100%;
+}
+
+.contentHeader h2 {
+    font-size: 24px;
+    color: var(--text-color);
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+.contentHeader h2 span {
+    font-family: "Dancing Script", cursive;
+    font-size: 22px;
+    color: var(--secondary-color);
+    font-weight: 100;
+}
+
+.contentHeader .tag {
+    font-size: 24px;
+    color: var(--text-color);
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.carousel .control-arrow,
+.carousel.carousel-slider .control-arrow {
+    border-radius: 50%;
+}
+
+#Contact .viewBTN {
+    width: 35%;
+}
+
+.viewBTN {
+    background: var(--secondary-color);
+    padding: 6px 6px 6px 48px;
+    width: 17%;
+    height: 50px;
+    border-radius: 30px;
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.viewBTN i {
+    position: absolute;
+    font-size: 34px;
+    top: 50%;
+    bottom: 50%;
+    display: flex;
+    left: 7px;
+    color: var(--white-color);
+    align-items: center;
+}
+
+.viewBTN span {
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 600;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgBox {
+    width: 65%;
+    position: relative;
+    margin: auto;
+}
+
+.Frame {
+    z-index: 1;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.box {
+    width: 33.3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.box i {
+    font-size: 35px;
+    padding: 0px 30px;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.box i::before {
+    z-index: 1;
+    position: relative;
+}
+
+.box i::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: var(--secondary-color);
+    position: absolute;
+    top: 17px;
+    right: 18px;
+    border-radius: 40px;
+}
+
+.box h6 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.box p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #898989;
+}
+
+
+.AboutUS .box h6 {
+    font-size: 35px !important;
+}
+
+.AboutUS .AboutBox {
+    padding: 40px 0px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Services .contentHeader h2,
+.Services .contentHeader .tag {
+    color: var(--white-color) !important;
+}
+
+.Services {
+    background: var(--primary-color);
+    padding: 30px 0;
+}
+
+.Services .content {
+    padding: 22px 80px;
+}
+
+.Services .boxs {
+    width: 33.3%;
+    background: rgb(128, 128, 128);
+    background: linear-gradient(0deg, rgba(128, 128, 128, 1) 25%, rgb(251 130 0) 100%);
+    margin: 10px;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.Services .boxs:hover {
+    background: var(--white-color);
+}
+
+.Services .boxs:hover h6 {
+    color: var(--text-color);
+}
+
+.Services .boxs:hover p {
+    color: #939393;
+}
+
+.Services .boxs:hover i {
+    color: var(--primary-color);
+}
+
+.Services .boxs h6 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--white-color);
+    margin-bottom: 8px;
+}
+
+.Services .boxs p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white-color);
+    line-height: 1;
+}
+
+.Services .boxs img {
+    height: 220px;
+    width: 319px;
+    border-radius: 10px;
+    margin-top: 20px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 64%, 74% 100%, 0% 100%);
+}
+
+.Services .boxs i {
+    position: absolute;
+    right: 17px;
+    bottom: 15px;
+    font-size: 36px;
+    color: var(--secondary-color);
+}
+
+.Label {
+    background: var(--secondary-color);
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.Label marquee {
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.Label marquee span {
+    font-size: 42px;
+    line-height: 0;
+    margin: 23px 10px 10px 10px;
+}
+
+.OurWork {
+    padding: 80px 0;
+}
+
+.OurWork .content {
+    padding: 0px 340px 40px 340px;
+    text-align: center;
+}
+
+.OurWork .boxs {
+    width: 25%;
+    text-align: center;
+    padding: 0px 25px;
+}
+
+.OurWork .boxs .icon {
+    background: var(--primary-color);
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.OurWork .boxs .icon i {
+    font-size: 26px;
+    color: var(--white-color);
+}
+
+.OurWork .boxs .icon .no {
+    background: var(--secondary-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--white-color);
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    right: -12px;
+    margin: auto;
+}
+
+.OurWork .boxs h6 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+.OurWork .boxs p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #797979;
+    line-height: 1;
+}
+
+.OurWork .boxs .icon::after {
+    content: "";
+    width: 90px;
+    height: 2px;
+    background: var(--primary-color);
+    z-index: 1;
+    position: absolute;
+    right: -149px;
+}
+
+.OurWork .boxs .iconLast::after {
+    content: unset !important;
+}
+
+.pdBox {
+    padding: 0px 100px;
+}
+
+.OurProject {
+    padding: 80px 0;
+    background: rgb(245 245 245);
+}
+
+.OurProject .imgBox {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.OurProject .imgBox .projectIMG {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.OurProject .imgBox .Details {
+    position: absolute;
+    bottom: 30px;
+    left: 4px;
+    padding: 42px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0 0 0 / 80%));
+}
+
+.OurProject .imgBox .Details h4 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--white-color);
+    margin-bottom: 8px;
+}
+
+.OurProject .imgBox .Details button {
+    background: none !important;
+    border: 2px solid #fff !important;
+    color: #fff !important;
+    width: unset !important;
+    height: unset !important;
+    padding: 2px 18px !important;
+    font-size: 14px !important;
+}
+
+.OurProject .imgBox i {
+    position: absolute;
+    right: 43px;
+    bottom: 58px;
+    z-index: 1;
+    font-size: 45px;
+    color: var(--primary-color);
+}
+
+.react-tabs__tab-list {
+    border-bottom: unset;
+}
+
+.react-tabs__tab--selected {
+    background: var(--secondary-color) !important;
+    color: var(--white-color) !important;
+    border: 1px solid var(--secondary-color) !important;
+    border-radius: 30px !important;
+}
+
+.react-tabs__tab {
+    background: var(--white-color);
+    border: 1px solid #6969698e;
+    color: var(--text-color);
+    border-radius: 30px !important;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.react-tabs ul {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0 120px;
+    margin-bottom: 10px;
+}
+
+.react-tabs__tab:focus:after {
+    content: unset !important;
+}
+
+.Transformations .contentHeader h2,
+.Transformations .contentHeader .tag {
+    color: var(--white-color) !important;
+}
+
+.Transformations {
+    background: var(--primary-color);
+    padding: 80px 100px;
+}
+
+.Transformations .control-prev {
+    background: var(--secondary-color) !important;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px !important;
+    position: absolute;
+    bottom: 0;
+}
+
+.Transformations .control-next {
+    background: var(--secondary-color) !important;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute !important;
+    bottom: 0 !important;
+    margin: 0 !important;
+    top: unset !important;
+    font-size: 42px !important;
+}
+
+.Transformations .carousel-root {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.carousel-status {
+    display: none !important;
+}
+
+.Transformations .carousel .control-arrow:before,
+.Transformations .carousel.carousel-slider .control-arrow:before {
+    content: "\f129";
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.Transformations .carousel .control-next.control-arrow:before {
+    content: "\f133" !important;
+    border: unset !important;
+}
+
+.Transformations .carousel .control-prev.control-arrow:before {
+    border-right: unset !important;
+}
+
+
+.IMGBOX {
+    width: 100%;
+    height: 520px;
+    position: relative;
+    margin: auto;
+}
+
+.IMGBOX .compare-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.IMGBOX .compare-container>div {
+    height: 100% !important;
+}
+
+
+.Testimonial {
+    background: var(--white-color);
+    padding: 80px 100px;
+}
+
+.Testimonial .Imgs {
+    position: absolute;
+    height: 100%;
+}
+
+.Testimonial .carousel-status {
+    display: none !important;
+}
+
+.Testimonial .control-prev {
+    background: var(--secondary-color) !important;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px !important;
+    margin: 163px 0px 0px 2px !important;
+}
+
+.Testimonial .control-next {
+    background: var(--secondary-color) !important;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 163px 0px 0px 2px !important;
+    font-size: 42px !important;
+}
+
+.Testimonial .carousel-root {
+    position: absolute;
+    top: 0;
+}
+
+.Testimonial .IMGBOX {
+    height: 340px !important;
+}
+
+.Testimonial .carousel .control-arrow:before,
+.Testimonial .carousel.carousel-slider .control-arrow:before {
+    content: "\f129";
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.Testimonial .carousel .control-next.control-arrow:before {
+    content: "\f133" !important;
+    border: unset !important;
+}
+
+.Testimonial .carousel .control-prev.control-arrow:before {
+    border-right: unset !important;
+}
+
+.contact-us {
+    background: rgb(245 245 245);
+    padding: 80px 100px;
+}
+
+.contact-us form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact-us .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 48%;
+}
+
+.contact-us label {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.contact-us input[type="text"],
+.contact-us input[type="email"],
+.contact-us input[type="tel"],
+.contact-us textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ebeaea;
+    border-radius: 15px;
+    margin-top: 5px;
+    color: #8a8a8a;
+    font-size: 16px;
+    font-weight: 700;
+    outline: none;
+    resize: none;
+    overflow: hidden;
+}
+
+.contact-us textarea {
+    height: 200px;
+}
+
+.contact-us h3 {
+    margin-bottom: 10px;
+}
+
+.contact-us .address-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 28px 40px 30px 42px;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    justify-content: center;
+}
+
+.address-container div {
+    width: 100%;
+}
+
+.contact-us .address-container h3 {
+    font-size: 20px;
+    color: var(--white-color);
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 34px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.contact-us .address-container p {
+    color: #cbcbcb;
+    font-weight: 500;
+}
+
+.contact-us .padding {
+    padding: 0px 0px 0px 55px;
+    position: relative;
+}
+
+.contact-us .icons i {
+    background: var(--secondary-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin: 10px 10px;
+    color: #fff;
+}
+
+.contactIMG {
+    position: absolute;
+    width: 100%;
+}
+
+.OutTeam {
+    background: var(--white-color);
+    padding: 80px 100px;
+}
+
+.OutTeam h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.OutTeam span {
+    color: #808080;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.OutTeam .imgBox {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.imgBox img {
+    width: 100%;
+}
+
+.OutTeam .imgBox img {
+    width: 100%;
+}
+
+.OutTeam .socialMedia {
+    position: absolute;
+    bottom: -110px;
+    transition: 0.3s;
+    width: 100%;
+    margin: auto;
+    height: 180px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0 0 0 / 80%));
+    padding-bottom: 20px;
+}
+
+.TeamFrame {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+}
+
+.imgBox:hover .socialMedia {
+    bottom: 18px;
+}
+
+.OutTeam .socialMedia i {
+    font-size: 26px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid var(--white-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin: 6px;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.OutTeam .socialMedia i:hover {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.AboutUS {
+    padding: 80px 0;
+}
+
+.w-full {
+    width: 100% !important;
+}
+
+.category-card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+    border-radius: 8px;
+}
+
+#Project_Details {
+    background: #f5f5f5;
+}
+
+.pdBox li {
+    margin: 0px 5px !important;
+}
+
+@media only screen and (max-width: 1300px) {
+    .main-Banner .contentBox {
+        padding: 60px 100px;
+    }
+}
+
+
+@media (max-width: 320px) {
+
+    .main-Banner h2 span {
+        font-size: 43px;
+    }
+
+    main .content .imgBox {
+        width: 100%;
+        top: 70px;
+        right: 28px;
+    }
+
+    .main-Banner button {
+        width: 80%;
+    }
+
+    .main-Banner {
+        padding: 40px 3px;
+    }
+
+    .main-Banner .contentBox {
+        padding: 0px 10px;
+        width: 100%;
+    }
+
+    .main-Banner .tag {
+        font-size: 18px;
+    }
+
+    .main-Banner h2 {
+        font-size: 27px;
+        line-height: 35px;
+        padding: 25px 0 0px 0;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .AbousResposive {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .AbousResposive .w-1\/2 {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .contentHeader .tag {
+        font-size: 14px;
+    }
+
+    .AboutUS .box h6 {
+        font-size: 22px !important;
+    }
+
+    .Services .content {
+        padding: 10px 10px;
+    }
+
+    .viewBTN span {
+        padding: 11px 32px 11px 13px;
+        margin: -1px -18px 0px 39px;
+        font-size: 10px;
+        display: block;
+    }
+
+    .viewBTN {
+        padding: 0;
+        height: 35px;
+    }
+
+    .viewBTN i {
+        font-size: 26px;
+    }
+
+    .Services .AllBoxes {
+        flex-direction: column;
+    }
+
+    .Services .boxs {
+        width: 97%;
+    }
+
+    .OurWork .content {
+        padding: 0;
+    }
+
+    .pdBox {
+        padding: 0px 20px;
+        flex-wrap: wrap;
+    }
+
+    .OurWork .boxs {
+        width: 50%;
+        padding: 6px;
+    }
+
+    .OurWork .boxs .icon::after {
+        content: unset !important;
+    }
+
+    .contentHeader h2 {
+        font-size: 16px;
+        line-height: 14px;
+    }
+
+    .react-tabs ul {
+        display: unset;
+        padding: 0;
+    }
+
+    .react-tabs__tab-panel .pdBox .w-1\/2 {
+        width: 100%;
+    }
+
+    .OurProject .imgBox i {
+        right: 25px;
+        bottom: 30px;
+        font-size: 38px;
+    }
+
+    .OurProject .imgBox .Details {
+        bottom: 20px;
+    }
+
+    .OurProject .imgBox .Details button {
+        margin: 4px;
+    }
+
+    .react-tabs__tab {
+        font-size: 12px;
+        margin: 4px;
+    }
+
+    .Transformations {
+        padding: 30px 5px;
+    }
+
+    .IMGBOX {
+        height: 210px;
+    }
+
+    .carousel .control-arrow,
+    .carousel.carousel-slider .control-arrow {
+        font-size: 18px !important;
+        width: 25px;
+        height: 25px;
+        margin: 10px !important;
+    }
+
+    .Testimonial {
+        background: var(--white-color);
+        padding: 50px 18px;
+    }
+
+    .carousel.carousel-slider .control-next {
+        top: 77% !important;
+    }
+
+    .contact-us {
+        padding: 14px 0px;
+    }
+
+    .contactBoxs .w-1\/2 {
+        width: 100%;
+    }
+
+    .contactBoxs {
+        flex-direction: column-reverse;
+    }
+
+    .contact-us .padding {
+        padding: 0;
+        margin: 11px 0px 9px -5px;
+    }
+
+    .contact-us form {
+        padding: 30px;
+    }
+
+    .contentHeader {
+        padding: 0 20px;
+    }
+
+    .OutTeam {
+        background: var(--white-color);
+        padding: 30px 0px;
+    }
+
+    .TeamBoxs {
+        flex-direction: column;
+    }
+
+    .TeamBoxs .w-4\/12 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .imgBox .socialMedia {
+        bottom: 50px;
+        left: 0 !important;
+    }
+}
+
+@media (max-width: 375px) and (min-width: 321px) {
+    .main-Banner button {
+        width: 80%;
+    }
+
+    .main-Banner h2 span {
+        font-size: 43px;
+    }
+
+    main .content .imgBox {
+        width: 100%;
+        top: 70px;
+        right: 28px;
+    }
+
+    .main-Banner {
+        padding: 40px 3px;
+    }
+
+    .main-Banner .contentBox {
+        padding: 0px 10px;
+        width: 100%;
+    }
+
+    .main-Banner .tag {
+        font-size: 18px;
+    }
+
+    .main-Banner h2 {
+        font-size: 27px;
+        line-height: 35px;
+        padding: 25px 0 0px 0;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .AbousResposive {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .AbousResposive .w-1\/2 {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .contentHeader .tag {
+        font-size: 14px;
+    }
+
+    .AboutUS .box h6 {
+        font-size: 22px !important;
+    }
+
+    .Services .content {
+        padding: 10px 10px;
+    }
+
+    .viewBTN span {
+        padding: 11px 32px 11px 13px;
+        margin: -1px -18px 0px 39px;
+        font-size: 10px;
+        display: block;
+    }
+
+    .viewBTN {
+        padding: 0;
+        height: 35px;
+    }
+
+    .viewBTN i {
+        font-size: 26px;
+    }
+
+    .Services .AllBoxes {
+        flex-direction: column;
+    }
+
+    .Services .boxs {
+        width: 97%;
+    }
+
+    .OurWork .content {
+        padding: 0;
+    }
+
+    .pdBox {
+        padding: 0px 20px;
+        flex-wrap: wrap;
+    }
+
+    .OurWork .boxs {
+        width: 50%;
+        padding: 6px;
+    }
+
+    .OurWork .boxs .icon::after {
+        content: unset !important;
+    }
+
+    .contentHeader h2 {
+        font-size: 16px;
+        line-height: 14px;
+    }
+
+    .react-tabs ul {
+        display: unset;
+        padding: 0;
+    }
+
+    .react-tabs__tab-panel .pdBox .w-1\/2 {
+        width: 100%;
+    }
+
+    .OurProject .imgBox i {
+        right: 25px;
+        bottom: 30px;
+        font-size: 38px;
+    }
+
+    .OurProject .imgBox .Details {
+        bottom: 20px;
+    }
+
+    .OurProject .imgBox .Details button {
+        margin: 4px;
+    }
+
+    .react-tabs__tab {
+        font-size: 12px;
+        margin: 4px;
+    }
+
+    .Transformations {
+        padding: 30px 5px;
+    }
+
+    .IMGBOX {
+        height: 210px;
+    }
+
+    .carousel .control-arrow,
+    .carousel.carousel-slider .control-arrow {
+        font-size: 18px !important;
+        width: 25px;
+        height: 25px;
+        margin: 10px !important;
+    }
+
+    .Testimonial {
+        background: var(--white-color);
+        padding: 50px 18px;
+    }
+
+    .carousel.carousel-slider .control-next {
+        top: 77% !important;
+    }
+
+    .contact-us {
+        padding: 14px 0px;
+    }
+
+    .contactBoxs .w-1\/2 {
+        width: 100%;
+    }
+
+    .contactBoxs {
+        flex-direction: column-reverse;
+    }
+
+    .contact-us .padding {
+        padding: 0;
+        margin: 11px 0px 9px -5px;
+    }
+
+    .contact-us form {
+        padding: 30px;
+    }
+
+    .contentHeader {
+        padding: 0 20px;
+    }
+
+    .OutTeam {
+        background: var(--white-color);
+        padding: 30px 0px;
+    }
+
+    .TeamBoxs {
+        flex-direction: column;
+    }
+
+    .TeamBoxs .w-4\/12 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .imgBox .socialMedia {
+        bottom: 50px;
+        left: 0 !important;
+    }
+}
+
+@media (max-width: 425px) and (min-width: 376px) {
+    .main-Banner h2 span {
+        font-size: 38px;
+    }
+
+    .main-Banner button {
+        width: 60%;
+    }
+
+    main .content .imgBox {
+        width: 100%;
+        top: 70px;
+        right: 28px;
+    }
+
+    .main-Banner {
+        padding: 40px 3px;
+    }
+
+    .main-Banner .contentBox {
+        padding: 0px 10px;
+        width: 100%;
+    }
+
+    .main-Banner .tag {
+        font-size: 18px;
+    }
+
+    .main-Banner h2 {
+        font-size: 27px;
+        line-height: 35px;
+        padding: 25px 0 0px 0;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .AbousResposive {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .AbousResposive .w-1\/2 {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .contentHeader .tag {
+        font-size: 14px;
+    }
+
+    .AboutUS .box h6 {
+        font-size: 22px !important;
+    }
+
+    .Services .content {
+        padding: 10px 10px;
+    }
+
+    .viewBTN span {
+        padding: 11px 32px 11px 13px;
+        margin: -1px -18px 0px 39px;
+        font-size: 10px;
+        display: block;
+    }
+
+    .viewBTN {
+        padding: 0;
+        height: 35px;
+    }
+
+    .viewBTN i {
+        font-size: 26px;
+    }
+
+    .Services .AllBoxes {
+        flex-direction: column;
+    }
+
+    .Services .boxs {
+        width: 97%;
+    }
+
+    .OurWork .content {
+        padding: 0;
+    }
+
+    .pdBox {
+        padding: 0px 20px;
+        flex-wrap: wrap;
+    }
+
+    .OurWork .boxs {
+        width: 50%;
+        padding: 6px;
+    }
+
+    .OurWork .boxs .icon::after {
+        content: unset !important;
+    }
+
+    .contentHeader h2 {
+        font-size: 16px;
+        line-height: 14px;
+    }
+
+    .react-tabs ul {
+        display: unset;
+        padding: 0;
+    }
+
+    .react-tabs__tab-panel .pdBox .w-1\/2 {
+        width: 100%;
+    }
+
+    .OurProject .imgBox i {
+        right: 25px;
+        bottom: 30px;
+        font-size: 38px;
+    }
+
+    .OurProject .imgBox .Details {
+        bottom: 20px;
+    }
+
+    .OurProject .imgBox .Details button {
+        margin: 4px;
+    }
+
+    .react-tabs__tab {
+        font-size: 12px;
+        margin: 4px;
+    }
+
+    .Transformations {
+        padding: 30px 5px;
+    }
+
+    .IMGBOX {
+        height: 210px;
+    }
+
+    .carousel .control-arrow,
+    .carousel.carousel-slider .control-arrow {
+        font-size: 18px !important;
+        width: 25px;
+        height: 25px;
+        margin: 10px !important;
+    }
+
+    .Testimonial {
+        background: var(--white-color);
+        padding: 50px 18px;
+    }
+
+    .carousel.carousel-slider .control-next {
+        top: 77% !important;
+    }
+
+    .contact-us {
+        padding: 14px 0px;
+    }
+
+    .contactBoxs .w-1\/2 {
+        width: 100%;
+    }
+
+    .contactBoxs {
+        flex-direction: column-reverse;
+    }
+
+    .contact-us .padding {
+        padding: 0;
+        margin: 11px 0px 9px -5px;
+    }
+
+    .contact-us form {
+        padding: 30px;
+    }
+
+    .contentHeader {
+        padding: 0 20px;
+    }
+
+    .OutTeam {
+        background: var(--white-color);
+        padding: 30px 0px;
+    }
+
+    .TeamBoxs {
+        flex-direction: column;
+    }
+
+    .TeamBoxs .w-4\/12 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .imgBox .socialMedia {
+        bottom: 50px;
+        left: 0 !important;
+    }
+}
+
+@media (max-width: 550px) and (min-width: 425px) {
+    .main-Banner h2 span {
+        font-size: 38px;
+    }
+
+    .main-Banner h2 {
+        font-size: 27px;
+    }
+
+    .AllBoxes {
+        flex-direction: column;
+    }
+
+    .Services .boxs {
+        width: 100%;
+    }
+
+    .pdBox {
+        padding: 0px 20px;
+        flex-wrap: wrap;
+    }
+
+    .OurWork .boxs {
+        width: 50%;
+        padding: 6px;
+    }
+
+    .OurWork .boxs .icon::after {
+        content: unset;
+    }
+
+    .OurProject .pdBox {
+        margin-top: 50px;
+    }
+
+    .TeamBoxs {
+        flex-direction: column;
+    }
+
+    .TeamBoxs .w-4\/12 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .imgBox .socialMedia {
+        bottom: 50px;
+        left: 0 !important;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+    .main-Banner button {
+        width: 90%;
+    }
+
+    .contentHeader h2 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .contentHeader .tag {
+        font-size: 16px;
+    }
+
+    .viewBTN span {
+        padding: 18px 18px;
+        margin: 0px -18px 0px 43px;
+        font-size: 12px;
+    }
+
+    .main-Banner {
+        padding: 27px 0px;
+    }
+
+    main .content .imgBox {
+        width: 100%;
+        top: 30px;
+    }
+
+    .main-Banner .contentBox {
+        padding: 10px 30px;
+    }
+
+    .main-Banner h2 {
+        font-size: 42px;
+        line-height: 53px;
+    }
+
+    .main-Banner p {
+        font-size: 12px;
+        color: #c3c3c3;
+        font-weight: 400;
+        padding: 20px 0;
+    }
+
+    /*------------------------ ThreeBox Css ------------------------ */
+
+    .threeBoxs .box h6 {
+        font-size: 16px;
+    }
+
+    .threeBoxs .box p {
+        font-size: 12px;
+    }
+
+    .threeBoxs .box i {
+        font-size: 35px;
+        padding: 0px 16px;
+    }
+
+    /* ------------------- About Us ------------------------ */
+    .AboutUS .AboutBox {
+        width: 100%;
+        padding: 10px 53px;
+    }
+
+    .AbousResposive {
+        flex-direction: column;
+    }
+
+    /* ----------------- Services ---------------- */
+
+
+    .Services .content {
+        padding: 20px 24px;
+    }
+
+    .AllBoxes {
+        padding: 20px 13px !important;
+    }
+
+    .Services .boxs {
+        padding: 12px;
+        margin: 6px;
+        text-align: center;
+    }
+
+    .Services .boxs h6 {
+        font-size: 18px;
+    }
+
+    .Services .boxs p {
+        font-size: 13px;
+    }
+
+    .Services .boxs img {
+        height: 100%;
+    }
+
+    .Services .boxs i {
+        right: 13px;
+        bottom: 12px;
+        font-size: 26px;
+    }
+
+    /* ------------------- OurWork ------------------- */
+
+    .OurWork .content {
+        padding: 0px 80px 40px 80px;
+    }
+
+    .pdBox {
+        padding: 0px 20px;
+    }
+
+    .OurWork .boxs {
+        padding: 0px 10px;
+    }
+
+    .OurWork .boxs .icon::after {
+        width: 60px;
+        right: -88px;
+    }
+
+    .OurWork .boxs p {
+        font-size: 14px;
+    }
+
+    /* ----------------- OurProject ----------------- */
+
+
+    .react-tabs ul {
+        padding: 0 10px;
+        justify-content: space-evenly;
+    }
+
+    .react-tabs__tab {
+        padding: 6px 9px !important;
+        margin: 0 !important;
+    }
+
+    .OurProject .imgBox {
+        position: relative;
+        width: 100%;
+    }
+
+    .OurProject .imgBox .Details {
+        bottom: 11px;
+        padding: 11px;
+    }
+
+    .OurProject .imgBox .Details h4 {
+        font-size: 16px;
+        line-height: 1;
+    }
+
+    .OurProject .imgBox .Details button {
+        font-size: 10px !important;
+        margin: 4px;
+    }
+
+    .OurProject .imgBox i {
+        right: 12px;
+        bottom: 8px;
+        font-size: 30px;
+    }
+
+    /* --------------------Transformations ----------------- */
+
+    .Transformations {
+        padding: 53px 20px;
+    }
+
+    .IMGBOX {
+        height: 100%;
+    }
+
+    .carousel .control-arrow,
+    .carousel.carousel-slider .control-arrow {
+        border-radius: 50%;
+        font-size: 27px !important;
+        width: 35px;
+        height: 35px;
+    }
+
+    /* ------------------- Testimonial ------------------- */
+
+    .Testimonial {
+        padding: 53px 20px;
+    }
+
+
+    .Testimonial .control-prev {
+        margin: 107px 0px 0px 1px !important;
+    }
+
+    .Testimonial .control-next {
+        margin: 107px 0px 0px 1px !important;
+    }
+
+    /* ------------------ contact -------------------- */
+    .contact-us {
+        padding: 53px 20px;
+    }
+
+    .contactBoxs {
+        flex-direction: column-reverse;
+    }
+
+    .contactBoxs .w-1\/2 {
+        width: 100%;
+    }
+
+    .contact-us .padding {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .contact-us .address-container {
+        background-size: contain;
+    }
+
+    /* -----------------------------OutTeam -------------------------- */
+    .OutTeam {
+        padding: 40px 20px;
+    }
+
+    .OutTeam .socialMedia {
+        bottom: 35px;
+        left: 0px;
+        padding: 0 8px;
+    }
+
+    .OutTeam .socialMedia i {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        margin: 0px 4px;
+    }
+
+    .OutTeam h3 {
+        font-size: 18px;
+    }
+
+    .OutTeam span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .main-Banner button {
+        width: 90%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .main-Banner button {
+        width: 53%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .main-Banner button {
+        width: 53%;
+    }
+}
+
+@media (min-width: 1400px) {}

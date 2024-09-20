@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Tangerine:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+body,
+html {
+    background: #fff;
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    font-size: 0.95rem;
+}
+
+:root {
+    --primary-color: #fb8200;
+    --white-color: rgb(255, 255, 255);
+    --secondary-color: gray;
+    --text-color: #252725;
+}
+
+#root {
+    padding-top: 111px;
+}
+
+a {
+    cursor: pointer !important;
+}
