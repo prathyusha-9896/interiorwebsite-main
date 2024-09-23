@@ -38,8 +38,7 @@ import walldecor from '../../Assets/walldecor.avif'
 import window from '../../Assets/window.avif'
 
 
-
-export default function Home() {
+export default function Home({ images }) {
   
   const [heroImage, setHeroImage] = useState(null);
   const [aboutImage, setAboutImage] = useState(null);
@@ -89,134 +88,22 @@ export default function Home() {
   const [afterslide8Images, setAfterslide8Images] = useState({});
   const [afterslide9Images, setAfterslide9Images] = useState({});
 
-  const images = [
-    { before: beforeslide1Images || require('../../Assets/After_&_Before/Before_9.jpg'), after: afterslide1Images || require('../../Assets/After_&_Before/After_9.jpg') },
-    { before: beforeslide2Images || require('../../Assets/After_&_Before/Before_8.jpg'), after: afterslide2Images || require('../../Assets/After_&_Before/After_8.jpg') },
-    { before: beforeslide3Images || require('../../Assets/After_&_Before/Before_7.jpg'), after: afterslide3Images || require('../../Assets/After_&_Before/After_7.jpg') },
-    { before: beforeslide4Images || require('../../Assets/After_&_Before/Before_6.jpg'), after: afterslide4Images || require('../../Assets/After_&_Before/After_6.jpg') },
-    { before: beforeslide5Images || require('../../Assets/After_&_Before/Before_5.jpg'), after: afterslide5Images || require('../../Assets/After_&_Before/After_5.jpg') },
-    { before: beforeslide6Images || require('../../Assets/After_&_Before/Before_4.jpg'), after: afterslide6Images || require('../../Assets/After_&_Before/After_4.jpg') },
-    { before: beforeslide7Images || require('../../Assets/After_&_Before/Before_3.jpg'), after: afterslide7Images || require('../../Assets/After_&_Before/After_3.jpg') },
-    { before: beforeslide8Images || require('../../Assets/After_&_Before/Before_2.jpg'), after: afterslide8Images || require('../../Assets/After_&_Before/After_2.jpg') },
-    { before: beforeslide9Images || require('../../Assets/After_&_Before/Before_1.jpg'), after: afterslide9Images || require('../../Assets/After_&_Before/After_1.jpg') },
+  const Images = [
+    { before: images.artBeforeslide1, after: images.artAfterslide1 },
+    { before: require('../../Assets/After_&_Before/Before_8.jpg'), after: require('../../Assets/After_&_Before/After_8.jpg') },
+    { before: require('../../Assets/After_&_Before/Before_7.jpg'), after: require('../../Assets/After_&_Before/After_7.jpg') },
+    { before: require('../../Assets/After_&_Before/Before_6.jpg'), after: require('../../Assets/After_&_Before/After_6.jpg') },
+    { before: require('../../Assets/After_&_Before/Before_5.jpg'), after: require('../../Assets/After_&_Before/After_5.jpg') },
+    { before: require('../../Assets/After_&_Before/Before_4.jpg'), after: require('../../Assets/After_&_Before/After_4.jpg') },
+    { before: require('../../Assets/After_&_Before/Before_3.jpg'), after: require('../../Assets/After_&_Before/After_3.jpg') },
+    { before: require('../../Assets/After_&_Before/Before_2.jpg'), after: require('../../Assets/After_&_Before/After_2.jpg') },
+    { before: require('../../Assets/After_&_Before/Before_1.jpg'), after: require('../../Assets/After_&_Before/After_1.jpg') },
     // Add more images as needed
   ];
  
-  const getFallbackImage = (index, type) => {
-    return require(`../../Assets/After_&_Before/${type}_${9 - index}.jpg`);
-  };
-  // Ensure that beforeslideXImages and afterslideXImages are defined or imported from another component
-  
-  console.log(images);
 
-  useEffect(() => {
-    // Load images from localStorage if available
-    const storedHeroImage = localStorage.getItem('heroImage');
-    if (storedHeroImage) setHeroImage(storedHeroImage);
-    const storedAboutImage = localStorage.getItem('aboutImage');
-    if (storedAboutImage) setAboutImage(storedAboutImage);
-
-    const storedEducationalDesignCommercial = localStorage.getItem('artEducationalCommercialImage');
-    if (storedEducationalDesignCommercial) setEducationalDesignCommercial(storedEducationalDesignCommercial);
-    const storedInteriorDesignImage = localStorage.getItem('artInteriorDesignImage');
-    if (storedInteriorDesignImage) setInteriorDesignImage(storedInteriorDesignImage);
-    const storedHospitalityDesignImage = localStorage.getItem('artHospitalityDesignImage');
-    if (storedHospitalityDesignImage) setHospitalityDesignImage(storedHospitalityDesignImage);
-
-
-
-    const storedOurDesignInterior1 = localStorage.getItem('artOurDesignInterior1Image');
-    if (storedOurDesignInterior1) setOurDesignInterior1(storedOurDesignInterior1);
-    const storedOurDesignInterior2 = localStorage.getItem('artOurDesignInterior2Image');
-    if (storedOurDesignInterior2) setOurDesignInterior2(storedOurDesignInterior2);
-    const storedOurDesignBedroom1 = localStorage.getItem('artOurDesignBedroom1Image');
-    if (storedOurDesignBedroom1) setOurDesignBedroom1(storedOurDesignBedroom1);
-    const storedOurDesignBedroom2 = localStorage.getItem('artOurDesignBedroom2Image');
-    if (storedOurDesignBedroom2) setOurDesignBedroom2(storedOurDesignBedroom2);
-    const storedOurDesignExterior1 = localStorage.getItem('artOurDesignExterior1Image');
-    if (storedOurDesignExterior1) setOurDesignExterior1(storedOurDesignExterior1);
-    const storedOurDesignExterior2 = localStorage.getItem('artOurDesignExterior2Image');
-    if (storedOurDesignExterior2) setOurDesignExterior2(storedOurDesignExterior2);
-    const storedOurDesignKitchen1 = localStorage.getItem('artOurDesignKitchen1Image');
-    if (storedOurDesignKitchen1) setOurDesignKitchen1(storedOurDesignKitchen1);
-    const storedOurDesignKitchen2 = localStorage.getItem('artOurDesignKitchen2Image');
-    if (storedOurDesignKitchen2) setOurDesignKitchen2(storedOurDesignKitchen2);
-    const storedOurDesignLivingroom1 = localStorage.getItem('artOurDesignLivingRoom1Image');
-    if (storedOurDesignLivingroom1) setOurDesignLivingroom1(storedOurDesignLivingroom1);
-    const storedOurDesignLivingroom2 = localStorage.getItem('artOurDesignLivingRoom2Image');
-    if (storedOurDesignLivingroom2) setOurDesignLivingroom2(storedOurDesignLivingroom2);
-    const storedOurDesignOffice1 = localStorage.getItem('artOurDesignOffice1Image');
-    if (storedOurDesignOffice1) setOurDesignOffice1(storedOurDesignOffice1);
-    const storedOurDesignOffice2 = localStorage.getItem('artOurDesignOffice2Image');
-    if (storedOurDesignOffice2) setOurDesignOffice2(storedOurDesignOffice2);
-    const storedOurDesignResidential1 = localStorage.getItem('artOurDesignResidential1Image');
-    if (storedOurDesignResidential1) setOurDesignResidential1(storedOurDesignResidential1);
-    const storedOurDesignResidential2 = localStorage.getItem('artOurDesignResidential2Image');
-    const storedTileImage = localStorage.getItem('artTileDesignsImage');
-    if (storedOurDesignResidential2) setOurDesignResidential2(storedOurDesignResidential2);
-    if (storedTileImage) setTileImage(storedTileImage);
-    const storedWallpaperImage = localStorage.getItem('artWallPaperDesignsImage');
-    if (storedWallpaperImage) setWallpaperImage(storedWallpaperImage);
-    const storedWallpaintImage = localStorage.getItem('artWallPaintDesignsImage');
-    if (storedWallpaintImage) setWallpaintImage(storedWallpaintImage);
-    const storedFloorImage = localStorage.getItem('artFlooringDesignsImage');
-    if (storedFloorImage) setFloorImage(storedFloorImage);
-    const storedWalldecorImage = localStorage.getItem('artWallDecorDesignsImage');
-    if (storedWalldecorImage) setWalldecorImage(storedWalldecorImage);
-    const storedWindowImage = localStorage.getItem('artWindowDesignsImage');
-    if (storedWindowImage) setWindowImage(storedWindowImage);
-
-
-
-    const storedBeforeslide1Images = localStorage.getItem('artBeforeslide1Image');
-    if (storedBeforeslide1Images) setBeforeslide1Images(storedBeforeslide1Images);
-    const storedBeforeslide2Images = localStorage.getItem('artBeforeslide2Image');
-    if (storedBeforeslide2Images) setBeforeslide2Images(storedBeforeslide2Images);
-    const storedBeforeslide3Images = localStorage.getItem('artBeforeslide3Image');
-    if (storedBeforeslide3Images) setBeforeslide3Images(storedBeforeslide3Images);
-    const storedBeforeslide4Images = localStorage.getItem('artBeforeslide4Image');
-    if (storedBeforeslide4Images) setBeforeslide4Images(storedBeforeslide4Images);
-    const storedBeforeslide5Images = localStorage.getItem('artBeforeslide5Image');
-    if (storedBeforeslide5Images) setBeforeslide5Images(storedBeforeslide5Images);
-    const storedBeforeslide6Images = localStorage.getItem('artBeforeslide6Image');
-    if (storedBeforeslide6Images) setBeforeslide6Images(storedBeforeslide6Images);
-    const storedBeforeslide7Images = localStorage.getItem('artBeforeslide7Image');
-    if (storedBeforeslide7Images) setBeforeslide7Images(storedBeforeslide7Images);
-    const storedBeforeslide8Images = localStorage.getItem('artBeforeslide8Image');
-    if (storedBeforeslide8Images) setBeforeslide8Images(storedBeforeslide8Images);
-    const storedBeforeslide9Images = localStorage.getItem('artBeforeslide9Image');
-    if (storedBeforeslide9Images) setBeforeslide9Images(storedBeforeslide9Images);
 
   
-    const storedAfterslide1Images = localStorage.getItem('artAfterslide1Image');
-    if (storedAfterslide1Images) setAfterslide1Images(storedAfterslide1Images);
-
-    const storedAfterslide2Images = localStorage.getItem('artAfterslide2Image');
-    if (storedAfterslide2Images) setAfterslide2Images(storedAfterslide2Images);
-
-    const storedAfterslide3Images = localStorage.getItem('artAfterslide3Image');
-    if (storedAfterslide3Images) setAfterslide3Images(storedAfterslide3Images);
-
-    const storedAfterslide4Images = localStorage.getItem('artAfterslide4Image');
-    if (storedAfterslide4Images) setAfterslide4Images(storedAfterslide4Images);
-
-    const storedAfterslide5Images = localStorage.getItem('artAfterslide5Image');
-    if (storedAfterslide5Images) setAfterslide5Images(storedAfterslide5Images);
-
-    const storedAfterslide6Images = localStorage.getItem('artAfterslide6Image');
-    if (storedAfterslide6Images) setAfterslide6Images(storedAfterslide6Images);
-
-    const storedAfterslide7Images = localStorage.getItem('artAfterslide7Image');
-    if (storedAfterslide7Images) setAfterslide7Images(storedAfterslide7Images);
-
-    const storedAfterslide8Images = localStorage.getItem('artAfterslide8Image');
-    if (storedAfterslide8Images) setAfterslide8Images(storedAfterslide8Images);
-
-    const storedAfterslide9Images = localStorage.getItem('artAfterslide9Image');
-    if (storedAfterslide9Images) setAfterslide9Images(storedAfterslide9Images);
-
-
-  }, []);
   return (
     <>
       <main className='main-Banner' id='Home'>
@@ -229,8 +116,7 @@ export default function Home() {
           <div className="w-1/2 relative">
             <div className="imgBox">
               <img src={Frame_IMG} alt="" className='Frame' />
-              <img src={heroImage || Hero_IMG} alt="Hero" className='Hero' onError={(e) => { e.target.src = Hero_IMG }}  />            
-            </div>
+              <img src={images.hero}  alt="Hero" className='Hero' onError={(e) => { e.target.src = Hero_IMG; }} />            </div>
           </div>
         </div>
       </main>
@@ -262,7 +148,7 @@ export default function Home() {
         </div>
         <div className="container mx-auto flex AbousResposive space-x-40 ">
           <div className="w-1/3  flex items-center	justify-center">
-          <img src={aboutImage || AboutIMG} alt="About Us" className="custom-frame ml-20" onError={(e) => { e.target.src = AboutIMG }} />          
+          <img src={images.about} alt="About Us" className="custom-frame ml-20" onError={(e) => { e.target.src = AboutIMG }} />          
           </div>
           <div className="w-1/2 AboutBox">
             <div className="contentHeader">
@@ -303,19 +189,19 @@ export default function Home() {
             <div className="boxs">
               <h6>Educational Commercial</h6>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <img src={educationalDesignCommercial || Art_IMG} alt="Service" onError={(e) => { e.target.src = Art_IMG }}/>
+              <img src={images.artEducationalCommercial} alt="Service" onError={(e) => { e.target.src = Art_IMG }}/>
               <i className="bi-arrow-up-right-circle-fill"></i>
             </div>
             <div className="boxs">
               <h6>Interior Design</h6>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <img src={interiorDesignImage || Art_IMG} alt="Service" onError={(e) => { e.target.src = Art_IMG }}/>
+              <img src={images.artInteriorDesign} alt="Service" onError={(e) => { e.target.src = Art_IMG }}/>
               <i className="bi-arrow-up-right-circle-fill"></i>
             </div>
             <div className="boxs">
               <h6>Hospitality Design</h6>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <img src={hospitalityDesignImage || Art_IMG} alt="Service" onError={(e) => { e.target.src = Art_IMG }} />
+              <img src={images.artHospitalityDesign} alt="Service" onError={(e) => { e.target.src = Art_IMG }} />
               <i className="bi-arrow-up-right-circle-fill"></i>
             </div>
           </div>
@@ -416,7 +302,7 @@ export default function Home() {
                 <div className="w-1/2">
                   <div className="imgBox">
                     <img src={ProjectFrame} alt="" className='Frame' />
-                    <img src={ourDesignInterior1 || Project} alt="" className='projectIMG' onError={(e) => { e.target.src = Project }}/>
+                    <img src={images.artOurDesignInterior1} alt="" className='projectIMG' onError={(e) => { e.target.src = Project }}/>
                     <div className="Details">
                       <h4>Interior Design</h4>
                       <button>2024</button>
@@ -429,7 +315,7 @@ export default function Home() {
                 <div className="w-1/2">
                   <div className="imgBox">
                     <img src={ProjectFrame} alt="" className='Frame' />
-                    <img src={ourDesignInterior2 || Project2} alt="" className='projectIMG' onError={(e) => { e.target.src = Project2 }} />
+                    <img src={images.artOurDesignInterior2} alt="" className='projectIMG' onError={(e) => { e.target.src = Project2 }} />
                     <div className="Details">
                       <h4>Interior Design</h4>
                       <button>2024</button>
@@ -446,7 +332,7 @@ export default function Home() {
                 <div className="w-1/2">
                   <div className="imgBox">
                     <img src={ProjectFrame} alt="" className='Frame' />
-                    <img src={ourDesignBeadroom1 || bedroom1} alt="" className='projectIMG' onError={(e) => { e.target.src = bedroom1 }} />
+                    <img src={images.artOurDesignBedroom1} alt="" className='projectIMG' onError={(e) => { e.target.src = bedroom1 }} />
                     <div className="Details">
                       <h4>Bed Room Apartment Interior Design</h4>
                       <button>2024</button>
@@ -459,7 +345,7 @@ export default function Home() {
                 <div className="w-1/2">
                   <div className="imgBox">
                     <img src={ProjectFrame} alt="" className='Frame' />
-                    <img src={ourDesignBeadroom2 || bedroom2} alt="" className='projectIMG' onError={(e) => { e.target.src = bedroom2 }}/>
+                    <img src={images.artOurDesignBedroom2} alt="" className='projectIMG' onError={(e) => { e.target.src = bedroom2 }}/>
                     <div className="Details">
                       <h4>Bed Room Apartment Interior Design</h4>
                       <button>2024</button>
@@ -476,7 +362,7 @@ export default function Home() {
                 <div className="w-1/2">
                   <div className="imgBox">
                     <img src={ProjectFrame} alt="" className='Frame' />
-                    <img src={ourDesignExterior1 || exterior1} alt="" className='projectIMG' onError={(e) => { e.target.src = exterior1 }}/>
+                    <img src={images.artOurDesignExterior1} alt="" className='projectIMG' onError={(e) => { e.target.src = exterior1 }}/>
                     <div className="Details">
                       <h4>Exterior Interior Design</h4>
                       <button>2024</button>
@@ -489,7 +375,7 @@ export default function Home() {
                 <div className="w-1/2">
                   <div className="imgBox">
                     <img src={ProjectFrame} alt="" className='Frame' />
-                    <img src={ourDesignExterior2 || exterior2} alt="" className='projectIMG' onError={(e) => { e.target.src = exterior2 }}/>
+                    <img src={images.artOurDesignExterior2} alt="" className='projectIMG' onError={(e) => { e.target.src = exterior2 }}/>
                     <div className="Details">
                       <h4>Exterior Interior Design</h4>
                       <button>2024</button>
@@ -506,7 +392,7 @@ export default function Home() {
                 <div className="w-1/2">
                   <div className="imgBox">
                     <img src={ProjectFrame} alt="" className='Frame' />
-                    <img src={ourDesignKitchen1 || kicthen1} alt="" className='projectIMG' onError={(e) => { e.target.src = kicthen1 }} />
+                    <img src={images.artOurDesignKitchen1} alt="" className='projectIMG' onError={(e) => { e.target.src = kicthen1 }} />
                     <div className="Details">
                       <h4>Kicthen Interior Design</h4>
                       <button>2024</button>
@@ -519,7 +405,7 @@ export default function Home() {
                 <div className="w-1/2">
                   <div className="imgBox">
                     <img src={ProjectFrame} alt="" className='Frame' />
-                    <img src={ourDesignKitchen2 || kicthen2} alt="" className='projectIMG' onError={(e) => { e.target.src = kicthen2 }}/>
+                    <img src={images.artOurDesignKitchen2} alt="" className='projectIMG' onError={(e) => { e.target.src = kicthen2 }}/>
                     <div className="Details">
                       <h4>Kicthen Interior Design</h4>
                       <button>2024</button>
@@ -536,7 +422,7 @@ export default function Home() {
                 <div className="w-1/2">
                   <div className="imgBox">
                     <img src={ProjectFrame} alt="" className='Frame' />
-                    <img src={ourDesignLivingroom1 || livingroom1} alt="" className='projectIMG' onError={(e) => { e.target.src = livingroom1 }}/>
+                    <img src={images.artOurDesignLivingRoom1} alt="" className='projectIMG' onError={(e) => { e.target.src = livingroom1 }}/>
                     <div className="Details">
                       <h4>Living Room Interior Design</h4>
                       <button>2024</button>
@@ -549,7 +435,7 @@ export default function Home() {
                 <div className="w-1/2">
                   <div className="imgBox">
                     <img src={ProjectFrame} alt="" className='Frame' />
-                    <img src={ourDesignLivingroom2 || livingroom2} alt="" className='projectIMG' onError={(e) => { e.target.src = livingroom2 }}/>
+                    <img src={images.artOurDesignLivingRoom2} alt="" className='projectIMG' onError={(e) => { e.target.src = livingroom2 }}/>
                     <div className="Details">
                       <h4>Living Room Interior Design</h4>
                       <button>2024</button>
@@ -566,7 +452,7 @@ export default function Home() {
                 <div className="w-1/2">
                   <div className="imgBox">
                     <img src={ProjectFrame} alt="" className='Frame' />
-                    <img src={ourDesignOffice1 || office1} alt="" className='projectIMG' onError={(e) => { e.target.src = office1 }} />
+                    <img src={images.artOurDesignOffice1} alt="" className='projectIMG' onError={(e) => { e.target.src = office1 }} />
                     <div className="Details">
                       <h4>Office Interior Design</h4>
                       <button>2024</button>
@@ -579,7 +465,7 @@ export default function Home() {
                 <div className="w-1/2">
                   <div className="imgBox">
                     <img src={ProjectFrame} alt="" className='Frame' />
-                    <img src={ourDesignOffice2 || office2} alt="" className='projectIMG' onError={(e) => { e.target.src = office2 }} />
+                    <img src={images.artOurDesignOffice2} alt="" className='projectIMG' onError={(e) => { e.target.src = office2 }} />
                     <div className="Details">
                       <h4>Office Interior Design</h4>
                       <button>2024</button>
@@ -596,7 +482,7 @@ export default function Home() {
                 <div className="w-1/2">
                   <div className="imgBox">
                     <img src={ProjectFrame} alt="" className='Frame' />
-                    <img src={ourDesignResidential1 || residencial1} alt="" className='projectIMG' onError={(e) => { e.target.src = residencial1 }}/>
+                    <img src={images.artOurDesignResidential1} alt="" className='projectIMG' onError={(e) => { e.target.src = residencial1 }}/>
                     <div className="Details">
                       <h4>Residencial Interior Design</h4>
                       <button>2024</button>
@@ -609,7 +495,7 @@ export default function Home() {
                 <div className="w-1/2">
                   <div className="imgBox">
                     <img src={ProjectFrame} alt="" className='Frame' />
-                    <img src={ourDesignResidential2 || residencial2} alt="" className='projectIMG' onError={(e) => { e.target.src = residencial2 }}/>
+                    <img src={images.artOurDesignResidential2} alt="" className='projectIMG' onError={(e) => { e.target.src = residencial2 }}/>
                     <div className="Details">
                       <h4>Residencial Interior Design</h4>
                       <button>2024</button>
@@ -629,7 +515,7 @@ export default function Home() {
           <div class="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-8">
             <a href="/" class="">
               <div class="category-card h-full">
-                <img loading="lazy" src={tileImage || tile} alt="Floor Tile Design ideas for home - Livspace"  onError={(e) => { e.target.src = tile }}/>
+                <img loading="lazy" src={images.artTileDesigns} alt="Floor Tile Design ideas for home - Livspace"  onError={(e) => { e.target.src = tile }}/>
                 <div class="p-4">
                   <p class="subtitle_large">
                     Tile Designs
@@ -642,7 +528,7 @@ export default function Home() {
             </a>
             <a href="/" class="">
               <div class="category-card h-full">
-              <img loading="lazy" src={wallpaperImage || wallpaper} alt="wallpaper" onError={(e) => { e.target.src = wallpaper }} />
+              <img loading="lazy" src={images.artWallPaperDesigns} alt="wallpaper" onError={(e) => { e.target.src = wallpaper }} />
               <div class="p-4">
                   <p class="subtitle_large">
                     Wallpaper Designs
@@ -655,7 +541,7 @@ export default function Home() {
             </a>
             <a href="/" class="">
               <div class="category-card h-full">
-              <img loading="lazy" src={wallpaintImage || wallpaint} alt="Wall Paint Design for your home - Livspace"  onError={(e) => { e.target.src = wallpaint }}/>
+              <img loading="lazy" src={images.artWallPaintDesigns} alt="Wall Paint Design for your home - Livspace"  onError={(e) => { e.target.src = wallpaint }}/>
                 <div class="p-4">
                   <p class="subtitle_large">
                     Wall Paint Designs
@@ -668,7 +554,7 @@ export default function Home() {
             </a>
             <a href="/" class="">
               <div class="category-card h-full">
-              <img loading="lazy" src={floorImage || flooring} alt="flooring Design for your home - Livspace"  onError={(e) => { e.target.src = flooring }}/>
+              <img loading="lazy" src={images.artFlooringDesigns} alt="flooring Design for your home - Livspace"  onError={(e) => { e.target.src = flooring }}/>
                 <div class="p-4">
                   <p class="subtitle_large">
                     Flooring Designs
@@ -681,7 +567,7 @@ export default function Home() {
             </a>
             <a href="/" class="">
               <div class="category-card h-full">
-                <img loading="lazy" src={walldecorImage || walldecor} alt="Wall Decor Ideas- Livspace" onError={(e) => { e.target.src = walldecor }} />
+                <img loading="lazy" src={images.artWallDecorDesigns} alt="Wall Decor Ideas- Livspace" onError={(e) => { e.target.src = walldecor }} />
                 <div class="p-4">
                   <p class="subtitle_large">
                     Wall Decor Ideas
@@ -694,7 +580,7 @@ export default function Home() {
             </a>
             <a href="/" class="">
               <div class="category-card h-full">
-                  <img loading="lazy" src={windowImage || window} alt="Trending Window Designs - Livspace"  onError={(e) => { e.target.src = window }}/>
+                  <img loading="lazy" src={images.artWindowDesigns} alt="Trending Window Designs - Livspace"  onError={(e) => { e.target.src = window }}/>
                 <div class="p-4">
                   <p class="subtitle_large">
                     Window Designs
@@ -717,7 +603,7 @@ export default function Home() {
           <div className="IMGBOX">
             <img src={TransformationsFrame} alt="" className='Frame' />
             <Carousel infiniteLoop showIndicators={false} showThumbs={false} emulateTouch={false} swipeable={false}>
-              {images.map((imagePair, index) => (
+              {Images.map((imagePair, index) => (
                 <div className="IMGBOX" key={index}>
                   <img src={TransformationsFrame} alt="" className='Frame' />
                   <div className="compare-container">

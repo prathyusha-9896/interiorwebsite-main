@@ -2,38 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css'; 
 import reportWebVitals from './reportWebVitals';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import Layout from './Layout';
-import Home from './Components/Home/Home'
-import Services from './Components/Services/Services';
-import ImageUploader from './Components/ImageUploader';
+import App from './App'; // Import App
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Layout />,
-    children: [
-      {
-        path: '/',
-        element: <Home />
-      }, 
-      {
-        path: '/Services',
-        element: <Services />
-      },
-      {
-        path: '/new',
-        element: <ImageUploader/>
-      }
-    ]
-  }
-])
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <App /> {/* Render the App component which now contains all routing */}
   </React.StrictMode>
 );
- 
 reportWebVitals();
